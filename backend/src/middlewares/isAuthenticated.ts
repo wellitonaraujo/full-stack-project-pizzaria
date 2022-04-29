@@ -6,7 +6,11 @@ interface PayLoad{
 }
 
 // Verifica se esta autenticado
-export function isAuthenticated(req: Request, res: Response, next: NextFunction){
+export function isAuthenticated(
+    req: Request,
+    res: Response, 
+    next: NextFunction
+){
     const authToken = req.headers.authorization;
 
     if(!authToken){
@@ -23,10 +27,11 @@ export function isAuthenticated(req: Request, res: Response, next: NextFunction)
             process.env.JWT_SECRET
         ) as PayLoad;
 
+        req.user_id = sub;
+
         return next();
         
     } catch (error) {
         return res.status(401).end();
     }
-
 }
