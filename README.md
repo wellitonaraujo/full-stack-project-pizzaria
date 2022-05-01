@@ -33,7 +33,7 @@ $ npm install ou yarn
 # Execute a aplicação em modo de desenvolvimento
 $ yarn dev
 
-# O servidor inciará na porta:3333 - acesse <http://localhost:3333>
+# O servidor inciará na porta:3333 - acesse http://localhost:3333
 ```
 ### 🛠 Tecnologias
 
@@ -45,3 +45,4 @@ As seguintes ferramentas foram/serão usadas na construção do projeto:
 - [TypeScript](https://www.typescriptlang.org/)  
 - [Prisma](https://www.prisma.io/docs/)
 - [JWT](https://jwt.io/)
+- [PostgreSQL](https://www.postgresql.org/)
