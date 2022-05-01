@@ -1,5 +1,6 @@
 # PizzaDev
 ## Projeto full-stack
+
 <h4 align="center"> 
 	🚧  Front-end Em construção...  🚧
 </h4>
@@ -8,6 +9,18 @@
 - [x] Back-end
 - [ ] Sistema Web
 - [ ] Aplicativo
+
+
+## Sistema Web: Back-end
+- Cadastrar um usuário com nome, email e senha.
+- Logar com email e senha.
+- Cadastrar categorias de produtos. ex: Categoria de bebidas, categoria de Pizzas etc.
+- Cadastrar produtos por categoria (Nome do produto, preço, descrição, imagem e categoria do produto)
+- Listar produtos por categoria
+- Listagem de Pedidos em aberto
+- Ver detalhes dos pedidos em aberto
+- Concluír um pedido case já finalizado
+
 
 ### Pré-requisitos
 
