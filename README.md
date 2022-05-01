@@ -11,7 +11,7 @@
 - [ ] Aplicativo
 
 
-## Sistema Web: Back-end
+## Sistema Web
 - Cadastrar um usuário com nome, email e senha.
 - Logar com email e senha.
 - Cadastrar categorias de produtos. ex: Categoria de bebidas, categoria de Pizzas etc.
