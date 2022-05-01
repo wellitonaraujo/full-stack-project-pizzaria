@@ -14,7 +14,7 @@
 ## Sistema Web
 - Cadastrar um usuário com nome, email e senha.
 - Logar com email e senha.
-- Cadastrar categorias de produtos. ex: Categoria de bebidas, categoria de Pizzas etc.
+- Cadastrar categorias de produtos, ex: Categoria de bebidas, categoria de Pizzas etc.
 - Cadastrar produtos por categoria (Nome do produto, preço, descrição, imagem e categoria do produto)
 - Listar produtos por categoria
 - Listagem de Pedidos em aberto
