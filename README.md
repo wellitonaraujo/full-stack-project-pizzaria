@@ -39,10 +39,10 @@ $ yarn dev
 
 As seguintes ferramentas foram/serão usadas na construção do projeto:
 
+- [TypeScript](https://www.typescriptlang.org/) 
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)  
+- [React Native](https://reactnative.dev/) 
 - [Prisma](https://www.prisma.io/docs/)
 - [JWT](https://jwt.io/)
 - [PostgreSQL](https://www.postgresql.org/)
