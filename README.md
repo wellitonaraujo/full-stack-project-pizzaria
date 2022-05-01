@@ -35,3 +35,13 @@ $ yarn dev
 
 # O servidor inciará na porta:3333 - acesse <http://localhost:3333>
 ```
+### 🛠 Tecnologias
+
+As seguintes ferramentas foram/serão usadas na construção do projeto:
+
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)  
+- [Prisma](https://www.prisma.io/docs/)
+- [JWT](https://jwt.io/)
