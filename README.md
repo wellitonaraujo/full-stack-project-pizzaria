@@ -21,12 +21,14 @@
 - Ver detalhes dos pedidos em aberto
 - Concluír um pedido case já finalizado
 
-
+##
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+##
 
 ### 🎲 Rodando o Back End (servidor)
 
@@ -48,6 +50,8 @@ $ yarn dev
 
 # O servidor inciará na porta:3333 - acesse http://localhost:3333
 ```
+
+##
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram/serão usadas na construção do projeto:
