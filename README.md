@@ -53,7 +53,7 @@ As seguintes ferramentas foram/serão usadas na construção do projeto:
 <a href="https://www.linkedin.com/in/wellitonaraujo/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/42000136?v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Welliton Araújo</b></sub></a> <a href="https://www.linkedin.com/in/wellitonaraujo//" title="LinkdIn">🚀</a>
+ <sub><b>Welliton Araújo</b></sub></a> <a target="_blank" href="https://www.linkedin.com/in/wellitonaraujo/" title="LinkdIn">🚀</a>
 
 
 Feito com ❤️ por Welliton Araújo
