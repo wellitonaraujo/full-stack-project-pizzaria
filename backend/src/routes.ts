@@ -50,6 +50,6 @@ router.put('/order/send', isAuthenticated, new SendOrderController().handle);
 router.get('/orders', isAuthenticated, new ListOrderController().handle);
 router.get('/order/detail', isAuthenticated, new DetailOrderController().handle);
 router.put('/order/finish', isAuthenticated, new FinishOrderController().handle);
-router.delete('/category/remove', isAuthenticated, new RemoveCategoryController().handle);
+// router.delete('/category/remove', isAuthenticated, new RemoveCategoryController().handle);
 
 export { router };
