@@ -7,8 +7,9 @@ import {api} from '../services/apiClient';
 type AuthContextData = {
     user: UserProps;
     isAuthenticated: boolean;
-    signIn: (credentials: SignProps) => Promise<void>;
+    signIn: (credentials: SignInProps) => Promise<void>;
     signOut: () => void;
+    signUp: (credentials: SignUpProps) => Promise<void>;
 }
 
 type UserProps = {
@@ -17,10 +18,17 @@ type UserProps = {
     email: string;
 }
 
-type SignProps = {
+type SignInProps = {
     email: string;
     password: string;
 }
+
+type SignUpProps = {
+    name: string;
+    email: string;
+    password: string;
+}
+
 
 type AuthProvierProps = {
     children: ReactNode;
@@ -44,7 +52,7 @@ export function AuthProvider({ children }: AuthProvierProps){
     const isAuthenticated = !!user;
 
     // função para logar 
-    async function signIn({ email, password }: SignProps) {
+    async function signIn({ email, password }: SignInProps) {
         try {
             const response = await api.post('/session', {
                 email,
@@ -75,8 +83,25 @@ export function AuthProvider({ children }: AuthProvierProps){
             console.log('Erro ao acessar', error)
         }
     }
+
+    // funcão para criar conta
+   async function signUp({ name, email, password }: SignUpProps) {
+       try {
+           const response = await api.post('/users', {
+               name,
+               email,
+               password
+           })
+
+           Router.push('/')
+
+           
+       } catch (error) {
+           console.log('erro ao cadastrar', error)
+       }
+   }
     return(
-        <AuthContext.Provider value={{ user, isAuthenticated, signIn, signOut }}>
+        <AuthContext.Provider value={{ user, isAuthenticated, signIn, signOut, signUp }}>
             {children}
         </AuthContext.Provider>
     )

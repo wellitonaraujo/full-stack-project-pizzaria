@@ -5,10 +5,44 @@ import logoImg from '../../../public/logo.svg';
 import styles from '../../../styles/home.module.scss';
 import { Button } from "../../components/ui/Button";
 import { Input } from "../../components/ui/Input";
+import { AuthContext } from "../../contexts/AuthContext";
 
 import Link from "next/link";
+import { FormEvent, useState, useContext } from "react";
 
 export default function Signup() {
+  const { signUp } = useContext(AuthContext);
+
+  const [name, setNome] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  
+
+  const [loading, setLoading] = useState(false);
+
+  async function handleSignup(event: FormEvent) {
+    event.preventDefault()
+
+    if(name === '' || email === '' || password === '') {    
+      alert('Preencha todos os campos!');
+        return;
+    }
+
+    setLoading(true)
+
+    let data = {
+      name,
+      email,
+      password
+    }
+
+    await signUp(data)
+
+    setLoading(false)
+
+  }
+
   return (
     <>
     <Head>
@@ -19,25 +53,32 @@ export default function Signup() {
 
         <div className={styles.login}>
             <h1>Criando sua conta</h1>
-          <form>
+
+          <form onSubmit={handleSignup}>
           <Input 
               placeholder="Digite seu nome"
-              type="email"
+              type="text"
+              value={name}
+              onChange={ (event) => setNome(event.target.value) }
             />
 
             <Input 
               placeholder="Digite seu email"
               type="email"
+              value={email}
+              onChange={ (event) => setEmail(event.target.value) }
             />
 
             <Input 
               placeholder="Sua senha"
               type="password"
+              value={password}
+              onChange={ (event) => setPassword(event.target.value) }
             />
 
             <Button 
               type="submit"
-              loading={false}
+              loading={loading}
             >
               Cadastrar
             </Button>
