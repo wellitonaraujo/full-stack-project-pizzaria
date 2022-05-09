@@ -11,8 +11,6 @@ import Link from "next/link";
 import { AuthContext } from "../contexts/AuthContext";
 import { toast } from "react-toastify";
 
-import * as yup from 'yup';
-
 export default function Home() {
   const {signIn} = useContext(AuthContext)
 
@@ -38,25 +36,6 @@ export default function Home() {
     await signIn(data)
       setLoading(false)
   }
-
-  const addressSchema = yup.object().shape({ 
-    email: yup
-      .string()
-      .email()
-      .required(),
-
-    password: yup
-      .string()
-      .required()
-  });
-
-  let addressFormData = {
-  // date valid 
- }
-
- addressSchema
-  .isValid(addressFormData)
-  .then( valid => handleLogin(valid) )
 
   return (
     <>

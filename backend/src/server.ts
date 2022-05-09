@@ -16,6 +16,8 @@ app.use(
     express.static(path.resolve(__dirname, '..', 'tmp'))
 )
 
+const port = process.env.PORT || 33333;
+
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
     if(err instanceof Error) {
         // Caso seja uma instancia do tipo Error
@@ -30,4 +32,4 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
     })
 })
 
-app.listen(3333, () => console.log('Servidor rodando....'))
+app.listen(port, () => console.log('Servidor rodando....'))
