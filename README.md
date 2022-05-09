@@ -51,7 +51,7 @@ $ yarn dev
 # O servidor inciará na porta:3333 - acesse http://localhost:3333
 ```
 
-### Rodando o Front End
+### Rodando o Front End (Cliente)
 
 ```bash
 # Vá para a pasta frontend
