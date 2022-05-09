@@ -44,7 +44,7 @@ export function signOut(){
         Router.push('/')
         
     } catch (error) {
-        console.log('error ao deslogar..')
+        // console.log('error ao deslogar..')
     }
 }
 
@@ -84,8 +84,7 @@ export function AuthProvider({ children }: AuthProvierProps){
 
         } catch (error) {
             toast.error("Algo deu errado... :(")
-
-            console.log('Erro ao acessar', error)
+            // console.log('Erro ao acessar', error)
         }
     }
 
@@ -105,7 +104,7 @@ export function AuthProvider({ children }: AuthProvierProps){
            
        } catch (error) {
             toast.error("Algo deu errado. :(")
-            console.log('erro ao cadastrar', error)
+            // console.log('erro ao cadastrar', error)
        }
    }
     return(
