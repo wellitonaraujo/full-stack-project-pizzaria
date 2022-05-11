@@ -16,7 +16,7 @@ app.use(
     express.static(path.resolve(__dirname, '..', 'tmp'))
 )
 
-const port = process.env.PORT || 33333;
+const port = 33333;
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
     if(err instanceof Error) {
