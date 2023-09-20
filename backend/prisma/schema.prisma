@@ -28,6 +28,7 @@ model Category {
   updated_at DateTime? @default(now())
 
   products Product[]
+
   @@map("categories")
 }
 
@@ -44,6 +45,7 @@ model Product {
 
   category_id String
   Item        Item[]
+
   @@map("products")
 }
 
@@ -57,6 +59,7 @@ model Order {
   updated_at DateTime? @default(now())
 
   items Item[]
+
   @@map("orders")
 }
 
@@ -71,5 +74,6 @@ model Item {
 
   order_id   String
   product_id String
+
   @@map("items")
 }
